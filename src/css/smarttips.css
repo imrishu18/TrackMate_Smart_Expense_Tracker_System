@@ -1,0 +1,117 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #e0f7fa, #e6fffa);
+  color: #1e3a3a;
+}
+
+/* Navbar */
+.topbar {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  padding: 0.7rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.nav-logo {
+  width: 45px;
+  height: 45px;
+}
+
+.nav-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #0ea5e9, #0f766e);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#backBtn {
+  background: linear-gradient(to right, #0ea5e9, #0f766e);
+  border: none;
+  padding: 0.45rem 1rem;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#backBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Titles */
+.page-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #0ea5e9, #0f766e);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+/* Glass Box */
+.glass-box {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.glass-box:hover {
+  transform: translateY(-2px);
+}
+
+/* Tips List */
+.tips-list ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.tips-list li {
+  background: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1rem;
+  padding: 0.85rem 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Quotes */
+.quote-box {
+  font-style: italic;
+  font-size: 1.05rem;
+  background: rgba(255, 255, 255, 0.45);
+  color: #134e4a;
+  border-left: 6px solid #0ea5e9;
+}
+.quote-box p {
+  margin: 0;
+  padding-left: 0.8rem;
+}

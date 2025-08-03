@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | TrackMate</title>
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body class="signup-body">
+  <div class="signup-container-wrapper">
+    <!-- Left: Form Section -->
+    <div class="signup-form-section">
+      <img src="../assets/trackmate_logo.png" alt="TrackMate Logo" class="signup-logo" />
+      <h1 class="form-heading">Welcome Back</h1>
+      <p class="form-subheading">Login to stay on top of your expenses</p>
+
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required />
+        <div class="password-wrapper">
+          <input type="password" id="password" placeholder="Password" required />
+          <span class="toggle-password" onclick="togglePasswordVisibility('password', this)">
+            <i class="fa-solid fa-eye"></i>
+          </span>
+        </div>
+        <button type="submit">Login</button>
+        <p class="switch-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <div id="message"></div>
+      </form>
+    </div>
+
+    <!-- Right: Illustration Section -->
+    <div class="signup-illustration-section">
+      <img src="../assets/skeleton_laptop.png" alt="Illustration" class="signup-illustration" />
+      <h3 class="signup-quote-title">Track Your Spending, Live Smart</h3>
+      <p class="signup-quote-subtitle">Stay in control of your money with TrackMate</p>
+    </div>
+  </div>
+
+  <script src="../src/js/controller/authController.js"></script>
+</body>
+</html>

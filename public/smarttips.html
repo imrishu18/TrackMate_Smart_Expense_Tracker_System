@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TrackMate | Smart Tips</title>
+  <link rel="stylesheet" href="../src/css/smarttips.css" />
+  <script src="https://kit.fontawesome.com/a2e0cf74b3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="topbar">
+    <div class="logo-section">
+      <img src="../assets/trackmate_logo.png" alt="TrackMate Logo" class="nav-logo" />
+      <h1 class="nav-title">TrackMate</h1>
+    </div>
+    <button id="backBtn">Back to Dashboard</button>
+  </header>
+
+  <main class="container">
+    <h2 class="page-title">Smart Spending & Saving Tips</h2>
+
+    <!-- Inspirational Quote -->
+    <section class="glass-box quote-box">
+      <p>💡 <em>“Do not save what is left after spending, but spend what is left after saving.”</em><br>— Warren Buffett</p>
+    </section>
+
+    <!-- Smart Tips List -->
+    <section class="glass-box tips-list">
+      <ul>
+        <li><strong>🧾 Track Every Rupee:</strong> Record even small expenses — it adds up.</li>
+        <li><strong>📊 Plan Monthly:</strong> Allocate your budget across needs, wants, and savings.</li>
+        <li><strong>🛍️ Delay Impulse Buys:</strong> Use the 24-hour rule for non-essentials.</li>
+        <li><strong>💸 Automate Savings:</strong> Set up auto-debits to a savings account.</li>
+        <li><strong>💳 Use UPI & Cards Wisely:</strong> Treat digital money like physical cash.</li>
+        <li><strong>🧠 Weekly Reviews:</strong> Reflect on spending every Sunday night.</li>
+        <li><strong>🎯 Set Goals:</strong> Visualize what you're saving for — it builds discipline.</li>
+        <li><strong>📉 Cut Subscriptions:</strong> Audit and cancel unused services.</li>
+      </ul>
+    </section>
+
+    <!-- Second Quote -->
+    <section class="glass-box quote-box">
+      <p>📘 <em>"A budget is telling your money where to go, instead of wondering where it went."</em><br>— Dave Ramsey</p>
+    </section>
+  </main>
+
+  <!-- JavaScript for navigation -->
+  <script>
+    document.getElementById("backBtn").addEventListener("click", () => {
+      window.location.href = "dashboard.html"; // adjust path if needed
+    });
+  </script>
+</body>
+</html>
