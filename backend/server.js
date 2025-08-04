@@ -6,8 +6,20 @@ require("dotenv").config();
 const app = express();
 const PORT = 5000;
 
+const allowedOrigins = [
+  "http://localhost:5000",
+  "https://trackmate-smart-expense-tracker.netlify.app"
+];
+
 app.use(cors({
-  origin: " http://localhost:5000",
+  origin: function (origin, callback) {
+    if (!origin) return callback(null, true); 
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error("Not allowed by CORS")); 
+    }
+  },
   credentials: true
 }));
 app.use(bodyParser.json());
