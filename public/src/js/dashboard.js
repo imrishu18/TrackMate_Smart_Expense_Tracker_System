@@ -20,12 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const toast = document.getElementById("toast");
     toast.textContent = message;
     toast.style.background = isError
-      ? "linear-gradient(to right, #0ea5e9, #7f1d1d)" // red gradient for error
-      : "linear-gradient(to right,  #0ea5e9, #0f766e)"; // rose-indigo for success
+      ? "linear-gradient(to right, #0ea5e9, #7f1d1d)" 
+      : "linear-gradient(to right,  #0ea5e9, #0f766e)"; 
     toast.classList.add("show");
     setTimeout(() => {
       toast.classList.remove("show");
-    }, 3000);
+    }, 5000);
   }
 
   // Logout
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/expenses", {
+      const res = await fetch("http://localhost:5000/api/expenses", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const selectedMonth = `${year}-${month}`;
 
     try {
-      const res = await fetch(`http://localhost:3000/api/expenses/summary?month=${selectedMonth}&userId=${userId}`);
+      const res = await fetch(`http://localhost:5000/api/expenses/summary?month=${selectedMonth}&userId=${userId}`);
       const data = await res.json();
 
       if (data.success) {
@@ -157,12 +157,11 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "insights.html";
   });
 
-  // Initialize
   populateSummaryFilters();
 });
 
 
-// Add event listeners once the DOM is fully loaded
+
 document.addEventListener("DOMContentLoaded", () => {
   const budgetBtn = document.getElementById("viewBudgetBtn");
   const tipsBtn = document.getElementById("viewTipsBtn");

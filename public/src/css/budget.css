@@ -141,7 +141,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* ✅ Updated: Stylish Heading */
+/* Stylish Heading */
 .section-heading {
   font-size: 1.7rem;
   font-weight: 700;
@@ -193,7 +193,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* ✅ Updated Icon Colors */
+/* Icon Colors */
 .icon-actions {
   display: flex;
   gap: 0.8rem;

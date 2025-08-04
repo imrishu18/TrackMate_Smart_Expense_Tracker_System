@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  const BASE_URL = "http://localhost:3000/api";
+  const BASE_URL = "http://localhost:5000/api";
   const monthSelect = document.getElementById("monthSelect");
   const yearSelect = document.getElementById("yearSelect");
   const applyBtn = document.getElementById("applyBtn");
