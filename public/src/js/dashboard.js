@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/expenses", {
+      const res = await fetch("https://trackmatesmartexpensetrackersystem.onrender.com/api/expenses", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const selectedMonth = `${year}-${month}`;
 
     try {
-      const res = await fetch(`http://localhost:5000/api/expenses/summary?month=${selectedMonth}&userId=${userId}`);
+      const res = await fetch(`https://trackmatesmartexpensetrackersystem.onrender.com/api/expenses/summary?month=${selectedMonth}&userId=${userId}`);
       const data = await res.json();
 
       if (data.success) {

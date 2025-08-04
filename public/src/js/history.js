@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const year = yearSelect.value;
 
     try {
-      const res = await fetch(`http://localhost:5000/api/expenses/all?userId=${userId}&month=${month}&year=${year}`);
+      const res = await fetch(`https://trackmatesmartexpensetrackersystem.onrender.com/api/expenses/all?userId=${userId}&month=${month}&year=${year}`);
       const data = await res.json();
 
       tableBody.innerHTML = "";
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
-      const res = await fetch(`http://localhost:5000/api/expenses/${id}`, {
+      const res = await fetch(`https://trackmatesmartexpensetrackersystem.onrender.com/api/expenses/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedExpense),
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!confirm("Are you sure you want to delete this expense?")) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/api/expenses/${id}`, {
+      const res = await fetch(`https://trackmatesmartexpensetrackersystem.onrender.com/api/expenses/${id}`, {
         method: "DELETE"
       });
 
