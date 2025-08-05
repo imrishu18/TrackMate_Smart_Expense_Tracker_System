@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 #  TrackMate – Smart Expense Tracker System
 
 **TrackMate** is a full-featured personal expense tracker that lets you **log daily expenses, analyze insights, manage history, and set monthly budgets** — all through a beautiful, intuitive interface.
