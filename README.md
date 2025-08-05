@@ -7,8 +7,7 @@ Built with **HTML**, **CSS**, **JavaScript**, **Node.js**, **MySQL**, TrackMate 
 
 ---
 
-## 🌐 Live Demo  
-**🔗 [TrackMate – Smart Expense Tracker](https://trackmate-smart-expense-tracker.netlify.app)**
+## 🌐 [Live Demo](https://trackmate-smart-expense-tracker.netlify.app)
 
 ---
 
@@ -119,8 +118,8 @@ You can:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/trackmate-expense-tracker
-cd trackmate-expense-tracker
+git clone https://github.com/imrishu18/TrackMate_Expense_Tracker_System
+cd TrackMate_Expense_Tracker_System
 ```
 
 ### 2. Install Dependencies
@@ -141,7 +140,7 @@ DB_HOST=localhost
 DB_USER=your_mysql_username
 DB_PASSWORD=your_mysql_password
 DB_NAME=your_db_name
-DB_PORT=3306
+DB_PORT=your_db_port
 JWT_SECRET=your_secret_key
 ```
 
