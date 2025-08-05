@@ -1,7 +1,7 @@
 
-# 💸 TrackMate – Smart Expense Tracker System
+#  TrackMate – Smart Expense Tracker System
 
-**TrackMate** is a full-featured personal finance tracker that lets you **log daily expenses, analyze insights, manage history, and set monthly budgets** — all through a beautiful, intuitive interface.
+**TrackMate** is a full-featured personal expense tracker that lets you **log daily expenses, analyze insights, manage history, and set monthly budgets** — all through a beautiful, intuitive interface.
 
 Built with **HTML**, **CSS**, **JavaScript**, **Node.js**, **MySQL**, TrackMate features a polished **glassmorphism UI**, smooth UX, and powerful data visualizations to help users make better financial decisions.
 
@@ -24,7 +24,7 @@ Built with **HTML**, **CSS**, **JavaScript**, **Node.js**, **MySQL**, TrackMate 
 ---
 
 ### 🔑 Login Page  
-> Securely log in and instantly access your personal finance dashboard.
+> Securely log in and instantly access your personal expense dashboard.
 
 ![Login Page](public/assets/screenshots/LoginPage.png)
 
