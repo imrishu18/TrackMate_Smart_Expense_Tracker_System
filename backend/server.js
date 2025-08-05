@@ -33,6 +33,10 @@ app.use("/api", authRoutes);
 app.use("/api/expenses", expenseRoutes);
 app.use("/api/insights", insightsRoutes);
 
+app.get("/ping", (req, res) => {
+  res.status(200).send("Server is ok!");
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
