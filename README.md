@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #  TrackMate – Smart Expense Tracker System
 
@@ -160,3 +161,4 @@ http://localhost:3000
 Developed by [Rishu Raj]  
 
 ---
+
