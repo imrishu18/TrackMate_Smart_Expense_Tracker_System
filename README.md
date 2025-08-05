@@ -111,7 +111,7 @@ You can:
 ### 💡 Smart Tips  
 > A collection of helpful financial advice, quotes, and spending hacks to keep you motivated and informed.
 
-![Smart Tips](public/assets/screenshots/Smarttips.png)
+![Smart Tips](public/assets/screenshots/SmartTips.png)
 
 ---
 
