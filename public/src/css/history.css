@@ -166,7 +166,7 @@ td button {
   color: white;
 }
 
-/* Modal - Updated to match dashboard.css */
+/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -183,6 +183,7 @@ td button {
   padding: 2rem;
   border-radius: 16px;
   max-width: 500px;
+  width: 90%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   animation: floatUp 0.3s ease;
   position: relative;
@@ -193,7 +194,7 @@ td button {
   to { transform: translateY(0); opacity: 1; }
 }
 
-.modal-title {
+.modal-content h2 {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -251,26 +252,4 @@ td button {
 .modal-content button:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
-}
-
-/* Toast */
-.toast {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: linear-gradient(to right, #0ea5e9, #0f766e);
-  color: white;
-  padding: 1rem 1.5rem;
-  border-radius: 10px;
-  font-size: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  z-index: 9999;
-}
-.toast.show {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
 }
